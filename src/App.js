@@ -3,11 +3,22 @@ import React from 'react';
 // import { Counter } from './features/counter/Counter';
 import './App.css';
 import Headers from './Components/Header/Header';
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Routes,
+} from 'react-router-dom';
+import StackOverflow from './Components/StackOverflow';
 function App() {
   return (
     <div className='App'>
-      <Headers />
+      <Router>
+        <Headers />
+        <Routes>
+          <Route exact path='/' element={<StackOverflow />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

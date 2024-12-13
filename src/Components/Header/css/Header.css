@@ -30,6 +30,10 @@ header {
   padding: 0;
   cursor: pointer;
 }
+/* .header-left > img:hover {
+  background-color: #ddd;
+  border-width: 10cap;
+} */
 .header-left > h3 {
   font-weight: 400;
   font-size: 14px;
